@@ -1,4 +1,4 @@
-# Kurucz - K1: Stellar Atmospheric Model Neural Emulator
+# Kurucz - A1: Stellar Atmospheric Model Neural Emulator -- ATLAS
 
 ## Overview
 
