@@ -48,7 +48,7 @@ model = emulator.load_from_checkpoint("checkpoints_v0327enc_hydro/best_model.pt"
 stellar_params = torch.tensor([[5000.0, 4.5, -0.5, 0.0]])  # Teff, log(g), [Fe/H], [α/Fe]
 
 # Create optical depth grid
-tau_grid = torch.logspace(-6, 2, 100).unsqueeze(0)  # Shape: [1, 100]
+tau_grid = torch.logspace(-6, 2, 80).unsqueeze(0)  # Shape: [1, 100]
 
 # Predict atmospheric structure
 atmosphere = model.predict(stellar_params, tau_grid)
